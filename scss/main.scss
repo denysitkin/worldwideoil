@@ -1,0 +1,13 @@
+@import "nullstyle.scss";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 20px 50px 0 50px;
+}
+
+@import "header.scss";
