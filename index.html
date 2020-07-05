@@ -3,179 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,700,900|Play:400,700|Russo+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <title>Worldwide Oil Portal</title>
+    <title>Enter Company</title>
 </head>
 <body>
-    
-    <section class="portal-main">
+    <div id="page-preloader" class="preload">
+            <div class="preload-elem">
+                <div class="preload-elem__logo animated infinite pulse">
+                    <div class="preload-elem__logo-img">
+                        <img class="logo-elem1" src="img/logo-element1.svg" alt="element1">
+                        <img class="logo-elem2" src="img/logo-element2.svg" alt="element2">
+                        <img class="fan1" src="img/fan.svg" alt="fan">
+                        <img class="fan2" src="img/fan.svg" alt="fan">
+                    </div>
+                    <div class="preload-elem__logo-name">
+                        <img class="logo-name" src="img/preloader-name.svg" alt="logo-name">
+                    </div>
+                </div>
+                <div class="preload-bar">
 
-        <header class="header">
+                </div>
+            </div>
+    </div>
 
-            <div class="container">
+    <div class="block1">
+        <div class="content__block1">
 
-                <div class="header-content">
+                <div class="header">
 
-                    <div class="header-content__logo">
-
-                        <img src="img/logo.png" alt="logo">
-
+                    <div id="header__logo" class="header-logo animated infinite pulse done">
+                        <div class="logo">
+                            <div class="logo-elem">
+                                <div class="header-elem__logo">
+                                    <div class="header-elem__logo-img">
+                                        <img class="header-logo__elem1" src="img/logo-element1.svg" alt="">
+                                        <img class="header-logo__elem2" src="img/logo-element2.svg" alt="">
+                                        <img class="header__fan1" src="img/header-fan.svg" alt="">
+                                        <img class="header__fan2" src="img/header-fan.svg" alt="">
+                                    </div>
+                                    <div class="header-elem__logo-name">
+                                        <img class="header-logo__name" src="img/header-logo-name.svg" alt="logo-name">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
 
-                    <div class="header-content__middle">
-
-                        <div class="header-content__title">
-
-                            WORLDWIDE OIL PORTAL
-    
-                        </div>
-    
-                        <div class="header-content__search">
-    
-                            <form action="" method="get">
-
-                                <span>
-    
-                                    <img src="img/search.svg" alt="search">
-    
-                                </span>
-
-                                <input name="s" id="search" placeholder="Search" type="search">
-
-                            </form>
-    
-                        </div>
-
-                        <nav class="nav">
-
-                            <ul class="nav-items">
-
-                               <li class="nav__item"><a href="">Home</a></li>
-                               <li class="nav__item arrow-btn"><a href="">Sale</a>
-                            
-                                <ul class="submenu">
-                                    <li><a href="">Equipment for Sale</a></li>
-                                    <li><a href="">Business for Sale</a></li>
-                                </ul>
-                            
-                                </li>
-                               <li class="nav__item"><a href="">Rent</a></li>
-                               <li class="nav__item"><a href="">Service</a></li>
-                               <li class="nav__item"><a href="">Tender</a></li>
-                               <li class="nav__item"><a href="">Auction</a></li>
-                               <li class="nav__item"><a href="">Stocks</a></li>
-                               <li class="nav__item"><a href="">Investments</a></li>
-                               <li class="nav__item"><a href="">About us</a></li>
-                               <li class="nav__item"><a href="">Job portal</a></li>
-                               <li class="nav__item"><a href="">Freelance</a></li>
-                               <li class="nav__item"><a href="">News</a></li>
-                               <li class="nav__item"><a href="">Branches</a></li>
-                               <li class="nav__item"><a href="">Contacts</a></li>
-                               <li class="nav__item"><a href="">Forum</a></li>
-
-                            </ul>
-
+                    <div class="header__nav">
+                        <nav>
+                            <a class="nav-item" href="#">О нас</a>
+                            <a class="nav-item" href="#">Компьютеры</a>
+                            <a class="nav-item" href="#">Ноутбуки</a>
+                            <a class="nav-item" href="#">Комплектующие ПК</a>
+                            <a class="nav-item" href="#">Контакты</a>
                         </nav>
+                    </div>
 
-                    </div> <!-- .header-content__middle -->
+                    <div class="header-btns">
+                        <div class="header-search">
+                            <input class="search-txt" type="text" name="" placeholder="поиск">
+                            <a class="search-link" href="#">
+                                <img class="search-btn" src="img/search.svg" alt="search">
+                            </a>
+                        </div>
 
-                    <div class="header-content__end">
+                        <div class="header-user"></div>
+                            <a class="user" href="#">
+                                <img class="user-btn" src="img/user.svg" alt="user">
+                            </a>
+                        </div>
+                    </div> <!-- header -->
 
-                        <div class="header-user">
+            <div class="main-block">
+                <div class="main-slider">
+                    <div class="slide-main">
+                        <a class="slide1" href="#">
+                            <img src="img/yellow-elipse.svg" alt="slide1">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a class="slide2" href="#">
+                            <img src="img/slide-yellow.svg" alt="circle">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a class="slide3" href="#">
+                            <img src="img/slide-yellow.svg" alt="circle">
+                        </a>
+                    </div>
+                    <div class="slide-down">
+                        <a class="slide4" href="#">
+                            <img src="img/down-yellow.svg" alt="down">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-company">
 
-                            <div class="header-user__enter">
+                    <div class="main-img animated delay-4s bounceInDown">
+                        <img src="img/main-img.png" alt="main-img">
+                    </div>
 
-                                <div class="header-user__lang">
+                </div>
+                <div class="main-social__links">
+                    <div class="social__links">
+                        <a class="social-link" href="https://www.instagram.com/anna_matviichenko/?hl=uk">instagram</a>
+                        <a class="social-link" href="#">facebook</a>
+                        <a class="social-link" href="#">twitter</a>
+                        <a class="social-link" href="#">telegram</a>
+                    </div>
+                </div>
+            </div> <!-- main-block -->
 
-                                    <div class="header-dropdown">
-    
-                                        <div class="header-dropdown__btn">
-    
-                                            <div class="dropbtn">En</div>
-    
-                                            <div class="arrow-down">
-    
-                                                <img src="img/arrow-down.svg" alt="arrow-down">
-    
-                                            </div>
-    
-    
-                                        </div>
-    
-                                        <div class="header-dropdown__content">
-    
-                                          <a href="#">Ru</a>
-                                          <a href="#">En</a>
-    
-                                        </div>
-    
-                                      </div> 
-    
-                                </div>
-    
-                                <div class="header-user__log">
-    
-                                    <div class="header-log">
-    
-                                        Log in   
-    
-                                    </div>
+            <div class="main-start">
+                <a class="main-start__btn" href="#">
+                    <img src="img/play-arrow 1.svg" alt="play-arrow">
+                </a>
+                <div class="main-start__pointer">
+                    <div class="pointer__text">
+                        Создай свою “машину времени”
+                    </div>
+                    <div class="pointer">
+                        <img src="img/arrow.svg" alt="arrow">
+                    </div>
+                </div>
+            </div> <!-- main-start -->
 
-                                    <span>|</span>
-    
-                                    <div class="header-reg">
-    
-                                         Register
-    
-                                    </div>
-    
-                                </div>
+            <div class="main-block1__end">
 
+                <div class="main-number__page">
+                    <div class="block1__number-1">
+                        01
+                    </div>
+                    <div class="block1__number-row">
+                        <img src="img/number-line.svg" alt="number-line">
+                    </div>
+                    <div class="block1__number-pages">
+                        03
+                    </div>
+                </div>
+
+                <div class="main-language">
+                    <div class="main-language__en">
+                        en
+                    </div>
+                    <div class="main-language__ru">
+                        ru
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- content -->
+    </div> <!-- block1 -->
+
+    <div class="block2">
+
+        <div class="content__block2">
+
+            <div class="about">
+                о нас
+            </div>
+
+            <div class="main-content__block2">
+
+                <div class="main-slide__block2">
+                    <div class="slide__up slide__item">
+                        <a class="slide-up" href="#"><img src="img/up-black.svg" alt="up"></a>
+                    </div>
+                    <div class="slide__1 slide__item">
+                        <img src="img/slide-black.svg" alt="slide1">
+                    </div>
+                    <div class="slide__2 slide__item">
+                        <img src="img/black-elipse.svg" alt="slide2">
+                    </div>
+                    <div class="slide__3 slide__item">
+                        <img src="img/slide-black.svg" alt="slide3">
+                    </div>
+                    <div class="slide__down">
+                        <a class="slide-down" href="#"><img src="img/down-black.svg" alt="down"></a>
+                    </div>
+                </div>
+
+                <div class="main-about__block2">
+
+                    <div class="about__quote">
+                        <div class="quote__bold">
+                            “Мы - молодая компания,  
+                        </div> 
+                        <div class="quote__light">
+                            которая хочет изменить мир!”
+                        </div>
+                    </div>
+
+                    <div class="about__info">
+                        <div class="info__1">
+                            На сегодняшний день, большинство из нас сталкиваются
+                            с разными проблемами связанными с компьютерами, 
+                            как например, от обычной ошибки на компьютере до поломки процессора.
+                        </div>
+                        <div class="info__2">
+                            <b>Цель нашего проекта:</b> модернизировать наше общество,
+                            помочь разобраться с проблемами новых технологий, 
+                            научить пользоваться компьютерами и ноутбуками, 
+                            а так же научить их собирать различные виды ПК
+                        </div>
+                    </div>
+
+                    <div class="about__contacts">
+                        <div class="contacts__quest">
+                            Возникли вопросы? Обращайся к нам!
+                        </div>
+                        <div class="contacts__btn">
+                            <a href="">Контакты</a>
+                        </div>
+                    </div>
+
+                    <div class="main-number__page">
+                        <div class="block2__number-1">
+                            02
+                        </div>
+                        <div class="block2__number-row">
+                            <img src="img/number-line.svg" alt="number-line">
+                        </div>
+                        <div class="block2__number-pages">
+                            03
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-we__block2">
+                    <div class="transparent-rec">
+                        <div id="back" class="person__back">
+                            <img src="img/back.svg" alt="back">
+                        </div>
+                        <div class="person__info">
+                            <div id="name" class="person__name">
+                                Денис Иткин
                             </div>
-
-                            <div class="header-user__info">
-
-                                <div class="header-info__reg">
-
-                                    Registered
-
-                                </div>
-
-                                <div class="header-info__about">
-
-                                    Companies: 20 from 9 countries <br>
-                                    Users: 48 from 13 countries <br>
-                                    Online: 1       
-
-                                </div>
-
+                            <div id="job" class="person__job">
+                                Owner, CEO компании ENTER
                             </div>
+                            <div class="person__dots">
+                                <div id="denys" class="dots-item active"></div>
+                                <div id="ann" class="dots-item"></div>
+                                <div id="danil" class="dots-item"></div>
+                            </div>
+                        </div>
+                        <div id="next" class="person__next">
+                            <img src="img/next.svg" alt="next">
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <img class="slides-item denys animated fadeIn" src="img/me.png" alt="denys">
+                        <img id="anna" class="slides-item anna animated fadeIn" src="img/anna.png" alt="anna">
+                        <img class="slides-item danil animated fadeIn" src="img/danil.png" alt="denys">
+                    </div>
+                </div>
 
-                        </div> <!-- .header-user -->
+            </div> <!-- main-content__block2-->
 
+        </div> <!-- content-block2 -->
 
+    </div> <!-- block2 -->
 
-                    </div> <!-- .header-content__end -->
+    <div class="block3">
 
-                </div> <!-- .header-content -->
-    
-            </div> <!-- .container -->
+        <div class="content__block3">
 
-        </header> <!-- .header -->
+            <div class="contacts">
+                КОНТАКТЫ
+            </div>
 
-        <section class="portal-video">
+            <div class="main-slide__block3">
+                <div class="slide__up slide__item">
+                    <a class="slide-up" href="#"><img src="img/up-yellow.svg" alt="up"></a>
+                </div>
+                <div class="slide__1 slide__item">
+                    <img src="img/slide-yellow.svg" alt="slide1">
+                </div>
+                <div class="slide__2 slide__item">
+                    <img src="img/slide-yellow.svg" alt="slide2">
+                </div>
+                <div class="slide__3 slide__item">
+                    <img src="img/yellow-elipse.svg" alt="slide3">
+                </div>
+                <div class="slide__down">
+                    <a class="slide-down" href="#"><img src="img/down-yellow.svg" alt="down"></a>
+                </div>
+            </div>
 
-            <video width="100%" height="100%" autoplay="true" loop="true" muted="muted">
-                <source src="img/1.mp4">
-            </video>
+        </div>
 
-        </section>
+    </div>
 
-    </section> <!-- .portal-main -->
-
+    <script src="js/preloader.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
